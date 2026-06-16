@@ -1,0 +1,5 @@
+{
+  "staging": "/home/frappe/staging-bench",
+  "uat": "/home/frappe/uat-bench",
+  "production": "/home/frappe/frappe-bench"
+}
