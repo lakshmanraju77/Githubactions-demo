@@ -1,0 +1,26 @@
+name: Frappe Deployment
+
+on:
+  workflow_dispatch:
+    inputs:
+
+      app:
+        description: "App Name (e.g. app1)"
+        required: true
+
+      branch:
+        description: "Branch to deploy"
+        required: true
+
+      environment:
+        description: "Environment"
+        required: true
+        type: choice
+        options:
+          - staging
+          - uat
+          - production
+
+      site:
+        description: "Site Name"
+        required: true
